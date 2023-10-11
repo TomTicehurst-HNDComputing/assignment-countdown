@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0</title>
+    <link rel="stylesheet" href="{{ url_for("static",filename="styles.css") }}">
+    <link rel="icon" href="{{ url_for('static',filename='favicon.ico') }}">
+  </head>
+  <body>
+    <div id="main">
+      <div>
+        <h1>Time left:</h1>
+        <h1 id="cd"></h1>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+    <script>
+      const socket = io.connect(`http://${document.domain}:${location.port}`);
+      socket.on("time",(time)=>{
+        document.getElementById("cd").innerHTML = time;
+        document.title = time;
+      });
+    </script>
+  </body>
+</html>

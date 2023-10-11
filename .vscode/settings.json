@@ -1,0 +1,21 @@
+{
+  "cSpell.words": ["dateutil", "dotenv", "jsonify", "markupsafe", "pymssql", "tzset", "werkzeug"],
+  "files.associations": { ".djlintrc": "json", "*.html": "html" },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[html]": {
+    "editor.tabSize": 2
+  },
+  "[jinja-html]": {
+    "editor.tabSize": 2
+  },
+  "tailwindCSS.includeLanguages": {
+    "jinja-html": "html"
+  },
+  "python.formatting.provider": "none",
+  "auto-close-tag.disableOnLanguage": ["markdown", "plaintext", "html", "jinja-html"],
+  "python.analysis.typeCheckingMode": "off",
+  "css.customData": [".vscode/tailwind.json"]
+}
