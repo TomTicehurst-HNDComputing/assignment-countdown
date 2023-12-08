@@ -60,4 +60,4 @@ if __name__ == "__main__":
     socketio.start_background_task(target=emitTask)
     socketio.start_background_task(target=updateTask)
 
-    socketio.run(app, "0.0.0.0", 25565, debug=True, allow_unsafe_werkzeug=True)
+    socketio.run(app, "0.0.0.0", 5444, debug=True, allow_unsafe_werkzeug=True)
